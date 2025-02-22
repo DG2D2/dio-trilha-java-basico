@@ -68,10 +68,69 @@ public class Operadores {
         System.out.println(variavel);
 
         variavel = !variavel;
-        System.out.println(variavel);
+        System.out.println(variavel + "\n");
+
+
+        int a, b;
+        a = 10;
+        b = 10;
+
+        String resultado = a == b ? "Verdadeiro": "Falso";
+        System.out.println(resultado + "\n");
+
+        // O código da linha 78 à 79 realiza exatamente a mesma operação do bloco de código da linha 82 à 88.
+
+        // String resultado = "";
+        // if (a == b)
+        //     resultado = "Verdadeiro";
+        // else
+        //     resultado = "Falso";
+
+        // System.out.println(resultado + "\n");
 
 
 
+        String nomeUm = "Davi";
+        String nomeDois = new String("Davi"); 
 
+        // System.out.println(nomeUm == nomeDois);   // 'False' por conta do novo objeto.
+        System.out.println(nomeUm.equals(nomeDois)); // Qaundo comparamos objetos usamos o método 'equals',
+                                                     // pois, ele compara conteúdos, se eu tenho dois objetos,
+                                                     // ele compara se o conteúdo destes objetos são iguais.
+
+
+        int num1 = 1;
+        int num2 = 2;
+
+        boolean simNao = num1 == num2;
+
+        if (num1 != num2) {
+            System.out.println("A condição é verdadeira.");
+        } else {
+            System.out.println("A condição é falsa.");
+        }
+
+        System.out.println("num1 é igual a num2? " + simNao);
+
+        simNao = num1 != num2;
+        System.out.println("num1 é igual a num2? " + simNao);
+
+        simNao = num1 > num2;
+        System.out.println("num1 é maior que num2? " + simNao + "\n");
+
+
+        boolean condicao1 = true;
+        boolean condicao2 = false;
+
+        if (condicao1 && condicao2) {
+            System.out.println("Ambas são verdadeiras.");
+        } else if (condicao1 || condicao2) {
+            System.out.println("Pelo menos uma é verdadeira.");
+        } else {
+            System.out.println("Nenhuma é verdadeira;");
+        }
+
+        System.out.println("Fim.");
+        
     }
 }
